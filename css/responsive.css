@@ -1,0 +1,57 @@
+/* ==========================================================================
+   RESPONSIVIDADE
+   Breakpoints preservados exatamente como no arquivo original.
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .hero__photo {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .pillars {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__watermark {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    padding: 120px 0 70px;
+  }
+
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feature-row {
+    gap: 14px;
+  }
+
+  .feature-row__icon {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+}

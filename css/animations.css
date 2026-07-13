@@ -1,0 +1,33 @@
+/* ==========================================================================
+   ANIMAÇÕES
+   Reveal on scroll (via IntersectionObserver em js/main.js) e preferências
+   de acessibilidade relacionadas a movimento e foco.
+   ========================================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--ease-slow), transform var(--ease-slow);
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respeita a preferência do sistema por menos animação */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Foco visível para navegação por teclado */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--gold-300);
+  outline-offset: 3px;
+}

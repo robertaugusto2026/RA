@@ -1,0 +1,41 @@
+/* ==========================================================================
+   VARIÁVEIS
+   Tokens de cor e tipografia extraídos do guia oficial de identidade visual
+   (Robert Augusto — Consultoria). Centralizar aqui facilita futura expansão.
+   ========================================================================== */
+
+:root {
+  /* Cores — paleta principal oficial */
+  --navy-900: #0B1D3A; /* Azul-marinho — cor principal, confiança e autoridade */
+  --navy-800: #0F2748; /* derivado — seções escuras planas */
+  --navy-700: #14315C; /* derivado — cards e degradês */
+  --navy-600: #133B7C; /* Azul institucional — reforço de tecnologia/estratégia */
+
+  --gold-500: #D4AF37; /* Dourado premium — excelência e alto valor percebido */
+  --gold-300: #E6C669; /* derivado — hover/realce do dourado */
+
+  /* Neutros oficiais */
+  --white: #FFFFFF;
+  --offwhite: #F5F6F7;   /* derivado do cinza suave, para seções claras */
+  --ink: #1A1D24;        /* Grafite — texto principal sobre fundo claro */
+  --muted: #8C9099;      /* Cinza claro — texto secundário sobre fundo escuro */
+  --muted-dark: #565B66; /* Cinza médio — texto secundário sobre fundo claro */
+
+  /* Linhas / bordas */
+  --line: rgba(255, 255, 255, 0.08);
+  --line-dark: rgba(26, 29, 36, 0.08);
+
+  /* Tipografia oficial */
+  --font-display: 'Montserrat', sans-serif; /* Títulos / destaques */
+  --font-support: 'Poppins', sans-serif;    /* Textos de apoio (rótulos, tags, botões) */
+  --font-body: 'Inter', sans-serif;         /* Corpo de texto / leitura */
+
+  /* Layout */
+  --container-width: 1180px;
+  --container-padding: 28px;
+
+  /* Transições */
+  --ease-fast: 0.25s ease;
+  --ease-medium: 0.3s ease;
+  --ease-slow: 0.7s ease;
+}
